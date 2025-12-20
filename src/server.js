@@ -3,16 +3,11 @@ const path = require('path');
 
 const PORT = 3000; // process.env.PORT || 3000
 const app = express();
-app.use(express.static(path.join(__dirname, 'public/home page')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   console.log('Home page request recieved');
-  res.sendFile('index.html');
-})
-
-app.get('/about', (req, res) => {
-  console.log('About page request recieved');
-  res.sendFile('public/about page/index.html', { root: __dirname });
+  res.sendFile(path.resolve(__dirname, 'public/home/index.html'));
 })
 
 const appServer = app.listen(PORT, () => {
