@@ -1,0 +1,34 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* TODO: font and such all go in global css */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(107, 156, 107);
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+p, ul, li, h1, h3{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(86, 180, 138);
+}
+
+
+#title {
+    text-align: center;
+}
+
+#content {
+    margin:auto;
+    width: 70%;
+    max-width: 500px;
+}

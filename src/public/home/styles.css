@@ -62,3 +62,10 @@ body {
     aspect-ratio: 1;
     background-color: lightgoldenrodyellow;
 }
+
+.preview-button {
+    justify-self: center;
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: lightgoldenrodyellow;
+}
