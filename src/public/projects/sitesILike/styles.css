@@ -3,15 +3,30 @@
 }
 
 body {
-    margin:0;
-    padding: 10px;
-    background-color: honeydew;
+    height: 100vh;
+    padding: 40px;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 #title {
     padding: 5px;
-    background-color: lemonchiffon;
-    outline: 2px solid lightslategray;
-    border-radius: 20px;
+    background-color: lightblue;
+    outline: 5px solid black;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 10px 10px 10px;
+}
+
+#content {
+    flex: 1;
+    padding: 5px;
+    background-color: lightblue;
+    outline: 5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 10px;
 }

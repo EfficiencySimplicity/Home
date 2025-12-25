@@ -1,0 +1,18 @@
+The client will get the cookie, containing key-value pairs
+The key is the url, and the value is all data associated
+with the url and the type of feed it contains.
+
+For example, a wss feed will have the last seen ID,
+An RSS feed will have the RSS file as a string,
+And html tracking will have the html file, as a string.
+
+so you read the cookies and send requests to the server,
+which will later return the data it finds, aided by
+the url query, and return the data, actually a key-value pair
+of {url, data} as json, where we have a promise waiting. So it'll 
+manage that new data, maybe fill up a list, and on command, 
+rewrite the cookie.
+
+For RSS, it can get... big. 
+So I'll hash the feed items in a list.
+< 4KB for a single cookie, and cookie limits to about 50...
