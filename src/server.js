@@ -3,7 +3,8 @@ const path = require('path');
 
 const { scriptApp } = require(path.join(__dirname, 'public/projects/sitesilike/serverScripts.js'));
 
-const PORT = 8100; // process.env.PORT || 3000
+const IP_ADDRESS = process.env.IP || '::';
+const PORT = process.env.PORT || 8100;
 const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -14,6 +15,6 @@ app.get('/', (req, res) => {
 
 scriptApp(app);
 
-const appServer = app.listen(PORT, () => {
+const appServer = app.listen(PORT, IP_ADDRESS, () => {
   console.log(`Site listening on port ${PORT}`);
 })
