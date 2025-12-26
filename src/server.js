@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 
-const { scriptApp } = require(path.join(__dirname, 'public/projects/sitesilike/serverScripts.js'));
+const { scriptApp } = require('./public/projects/sitesilike/serverScripts.js');
 
 const IP_ADDRESS = process.env.IP || '::';
 const PORT = process.env.PORT || 8100;
