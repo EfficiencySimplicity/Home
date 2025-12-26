@@ -5,6 +5,7 @@ const { scriptApp } = require(path.join(__dirname, 'public/projects/sitesilike/s
 
 const IP_ADDRESS = process.env.IP || '::';
 const PORT = process.env.PORT || 8100;
+
 const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
