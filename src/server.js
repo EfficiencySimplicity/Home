@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public/home/index.html'));
 })
 
-// scriptApp(app);
+scriptApp(app);
 
 const appServer = app.listen(PORT, IP_ADDRESS, () => {
   console.log(`Site listening on port ${PORT}`);
