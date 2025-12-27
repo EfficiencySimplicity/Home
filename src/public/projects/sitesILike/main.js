@@ -54,7 +54,7 @@ async function checkSites(memories) {
 
     console.log(`Sent request to check ${url}`);
 
-    let promise = await fetch(`/projects/sitesilike/reader?url=${url}`)
+    let promise = await fetch(`/projects/sitesILike/reader?url=${url}`)
     .then(function(response) {
       return response.json();
     }).then(function(responseObj) {

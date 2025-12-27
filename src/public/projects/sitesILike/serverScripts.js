@@ -11,7 +11,7 @@ async function readUpdate(url) {
 }
 
 function scriptApp(app) {
-  app.get('/projects/sitesilike/reader', (req, res) => {
+  app.get('/projects/sitesILike/reader', (req, res) => {
     console.log('SitesILike request recieved');
     readUpdate(req.query.url)
     .then((result) => {
