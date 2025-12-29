@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href ="/blog/styles.css">
+    <script defer src = "/blog/main.js"></script>
 </head>
 
 
@@ -24,10 +25,19 @@
     </div>
 
     <div id = "content">
-
-        //TODO: get Medium feed here
-
+        <p>LOADING...</p>
     </div>
+
+    <template id = "article-template">
+        <div class = "article-link">
+            <!-- <h3>Author</h3> -->
+            <h2>Title</h2>
+            <p class = 'post-date'>DATE</p>
+            <!-- TODO: global favicom link world -->
+            <a target='_top'>Read on Medium</a>
+            <p class = 'preview-post-text'>TEXT</p>
+        </div>
+    </template>
 
 </body>
 

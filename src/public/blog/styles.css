@@ -8,18 +8,22 @@ body {
     width: 100%;
     height: 100%;
 
-    background-color: rgb(208, 163, 139);
+    background-color: whitesmoke;
 }
 
-img {
+img, iframe{
     display: block;
-    margin: auto;
+    width: 100%;
 }
 
-p, ul, li, h1, h3{
+p, ul, li, h1, h2, h3, a, .article-link{
     padding: 10px;
-    margin: 10px;
-    background-color: rgb(213, 147, 111);
+    margin: 20px;
+}
+
+.post-date {
+    color: lightgrey;
+    font-style: italic;
 }
 
 
@@ -30,5 +34,12 @@ p, ul, li, h1, h3{
 #content {
     margin:auto;
     width: 70%;
-    max-width: 500px;
+    max-width: 1000px;
+}
+
+/* https://dev.to/thisdotmedia_staff/how-to-truncate-strings-easily-with-css-5d66 */
+
+.article-link {
+    outline: 5px solid lightgrey;
+    border-radius: 10px;
 }

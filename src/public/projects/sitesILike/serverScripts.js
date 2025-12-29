@@ -10,14 +10,12 @@ async function readUpdate(url) {
   return feed;
 }
 
-function scriptApp(app) {
-  app.get('/projects/sitesILike/reader', (req, res) => {
-    console.log('SitesILike request recieved');
-    readUpdate(req.query.url)
-    .then((result) => {
-      res.json({url: req.query.url, data:result});
-    });
-  })
+function sitesILikeScripts(req, res) {
+  console.log('SitesILike request recieved');
+  readUpdate(req.query.url)
+  .then((result) => {
+    res.json({url: req.query.url, data:result});
+  });
 }
 
-module.exports = {scriptApp};
+module.exports = {sitesILikeScripts};
