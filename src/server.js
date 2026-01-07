@@ -19,6 +19,20 @@ app.get('/', (req, res) => {
 app.get('/projects/sitesILike/reader', sitesILikeScripts);
 app.get('/blog/reader', blogScripts);
 
+// Handle errors
+// https://expressjs.com/en/starter/faq.html
+// https://expressjs.com/en/guide/error-handling.html
+
+app.use((req, res, next) => {
+  res.status(404).sendFile(path.resolve(__dirname, 'public/errors/404/index.html'))
+})
+
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500).sendFile(path.resolve(__dirname, 'public/errors/500/index.html'))
+})
+
+
 const appServer = app.listen(PORT, IP_ADDRESS, () => {
   console.log(`Site listening on port ${PORT}`);
 })
