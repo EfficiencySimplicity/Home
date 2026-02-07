@@ -7,7 +7,7 @@ body {
   width:  100vw;
   height: 100vh;
 
-  background-image:    url('assets/backgrounds/droplets.png');
+  background-image:    url('assets/backgrounds/forest.png');
   background-repeat:   no-repeat;
   background-position: center;
   background-size:     cover;
@@ -33,6 +33,7 @@ body {
   min-width:  0;
   min-height: 0;
   /* necessary above? */
+  /* add banner in here */
 }
 
 #display-frame {
