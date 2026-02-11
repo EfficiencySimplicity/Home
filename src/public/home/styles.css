@@ -90,7 +90,8 @@ body {
 
   display:               grid;
   grid-template-columns: 1fr;
-  justify-content:       space-around;
+  grid-auto-rows:        150px;
+
   row-gap:               10px;
   padding:               10px;
 
@@ -108,5 +109,27 @@ body {
   justify-self: center;
   
   background:      url('assets/DefaultLinkBox.png') no-repeat center;
+  background-size: 100%;
+
+  transform: scale(100%);
+  transition: .1s;
+}
+
+.preview-button:hover {
+  transform: scale(110%);
+}
+
+#art-icon {
+  background:      url('assets/art-icon.svg') no-repeat center;
+  background-size: 90%;
+}
+
+#about-icon {
+  background:      url('assets/about-icon.svg') no-repeat center;
+  background-size: 90%;
+}
+
+#blog-icon {
+  background:      url('assets/blog-icon.svg') no-repeat center;
   background-size: 90%;
 }
